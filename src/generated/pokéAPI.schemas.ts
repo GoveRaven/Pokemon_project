@@ -556,13 +556,11 @@ export interface PokemonEvolution {
   readonly condition_expression: EvolutionConditionExpression | null;
 }
 
-export type EvolutionChainLinkEvolvesToItem = { [key: string]: unknown };
-
 export interface EvolutionChainLink {
   is_baby: boolean;
   species: PokemonSpeciesSummary;
   evolution_details: PokemonEvolution[];
-  evolves_to: EvolutionChainLinkEvolvesToItem[];
+  evolves_to: EvolutionChainLink[];
 }
 
 export interface EvolutionChainDetail {

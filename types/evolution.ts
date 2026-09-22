@@ -1,4 +1,4 @@
 export type TEvolutionChain = {
   name: string;
-  id: string;
+  evolutionChainID: number;
 };

@@ -13,21 +13,21 @@ export type TPokemonPageData = {
     officialArtwork: string | null;
   };
 
-  height: number;
-  weight: number;
+  height: number | null | undefined;
+  weight: number | null | undefined;
 
   types: string[];
 
   stats: TPokemonStats;
 
-  description: string;
+  description: string | undefined;
 
   generation: string;
   habitat: string | null;
 
   evolution: {
     name: string;
-    image: string | null;
+    evolutionChainID: number;
   }[];
 };
 
