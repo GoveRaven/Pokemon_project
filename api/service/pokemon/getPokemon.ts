@@ -25,7 +25,7 @@ export async function getPokemonPageData(
     description: pokemonSpecies.description,
     generation: pokemonSpecies.generation,
     habitat: pokemonSpecies.habitat,
-    evolution: pokemonSpecies.evolution,
+    evolutionChain: pokemonSpecies.evolution,
   };
   return response;
 }

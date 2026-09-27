@@ -4,26 +4,14 @@ import { TEvolutionChain } from '@/types/evolution';
 
 export async function getEvolutionChain(evolutonChainID: string) {
   const data = await evolutionChainRetrieve(evolutonChainID);
-  return culcEvolutionChain(data.data.chain.evolves_to, data.data.id);
+  return calcEvolutionChain(data.data.chain);
 }
 
-function culcEvolutionChain(
-  evolvesTo: EvolutionChainLink[],
-  evolutionChainID: number,
-): TEvolutionChain[] {
-  return evolvesTo.flatMap((el) => {
-    const currentEvolution = {
-      name: el.species.name,
-      evolutionChainID,
-    };
-
-    if (el.evolves_to.length === 0) {
-      return [currentEvolution];
-    }
-
-    return [
-      currentEvolution,
-      ...culcEvolutionChain(el.evolves_to, evolutionChainID),
-    ];
-  });
+function calcEvolutionChain(chain: EvolutionChainLink): TEvolutionChain {
+  return {
+    name: chain.species.name,
+    evolvesTo: chain.evolves_to.length
+      ? chain.evolves_to.map((evol) => calcEvolutionChain(evol))
+      : null,
+  };
 }

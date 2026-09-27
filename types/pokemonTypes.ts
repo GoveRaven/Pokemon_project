@@ -1,3 +1,5 @@
+import { TEvolutionChain } from "./evolution";
+
 export type TPokemonList = {
   id: number;
   sprite: string;
@@ -25,10 +27,7 @@ export type TPokemonPageData = {
   generation: string;
   habitat: string | null;
 
-  evolution: {
-    name: string;
-    evolutionChainID: number;
-  }[];
+  evolutionChain: TEvolutionChain;
 };
 
 export type TPokemonStats = {
