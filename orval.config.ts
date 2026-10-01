@@ -5,7 +5,8 @@ export default defineConfig({
     input:
       'https://raw.githubusercontent.com/PokeAPI/pokeapi/refs/heads/master/openapi.yml',
     output: {
-      target: './src/generated/pokeapi.ts',
+      target: './src/generated',
+      mode: 'tags-split',
       client: 'fetch',
       baseUrl: 'https://pokeapi.co',
     },
