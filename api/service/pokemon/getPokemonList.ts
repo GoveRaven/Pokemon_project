@@ -2,8 +2,11 @@ import { pokemonList } from '@/src/generated';
 import { getSinglePokemon } from './getSinglePokemon';
 import { TShortPokemonInfo } from '@/types/pokemonTypes';
 
-export async function getListOfPokemon(): Promise<TShortPokemonInfo[]> {
-  const listData = (await pokemonList()).data;
+export async function getListOfPokemon(
+  limit: number = 20,
+  offset: number = 0,
+): Promise<TShortPokemonInfo[]> {
+  const listData = (await pokemonList({ limit, offset })).data;
   console.log(listData);
   const listOfPokemon = await Promise.all(
     listData.results.map((pokemon) => {

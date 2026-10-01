@@ -1,7 +1,13 @@
-import { getPokemon } from '@/api/service/pokemon/pokemon';
+import { getListOfPokemon } from '@/api/service/pokemon/getPokemonList';
+import { PokemonList } from './pokemonList';
 
 export default async function Home() {
-  const data2 = await getPokemon(4);
-  console.log(data2);
-  return <main></main>;
+  // const data = await getPokemonPageData(133);
+  // console.log(data);
+  const initState = await getListOfPokemon();
+  return (
+    <main>
+      <PokemonList initState={initState} />
+    </main>
+  );
 }
