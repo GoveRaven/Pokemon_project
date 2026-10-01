@@ -1,4 +1,4 @@
-import { TEvolutionChain } from "./evolution";
+import { TEvolutionChain } from './evolution';
 
 export type TPokemonList = {
   id: number;
@@ -28,6 +28,12 @@ export type TPokemonPageData = {
   habitat: string | null;
 
   evolutionChain: TEvolutionChain;
+};
+
+export type TShortPokemonInfo = {
+  name: string;
+  id: string;
+  image: string;
 };
 
 export type TPokemonStats = {
