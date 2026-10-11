@@ -77,9 +77,9 @@ export interface PokemonSummary {
 export interface AbilityPokemonDetail {
   is_hidden?: boolean;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     */
   slot: number;
   pokemon: PokemonSummary;
 }
@@ -117,9 +117,9 @@ export interface BerryFlavorSummary {
 
 export interface BerryFlavorMap {
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     */
   potency: number;
   flavor: BerryFlavorSummary;
 }
@@ -141,40 +141,40 @@ export interface BerryDetail {
   /** @maxLength 200 */
   name: string;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   growth_time?: number | null;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   max_harvest?: number | null;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   natural_gift_power?: number | null;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   size?: number | null;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   smoothness?: number | null;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   soil_dryness?: number | null;
   firmness: BerryFirmnessSummary;
   readonly flavors: readonly BerryFlavorMap[];
@@ -204,9 +204,9 @@ export interface BerryFirmnessDetail {
 
 export interface BerryFlavorBerryMap {
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     */
   potency: number;
   berry: BerrySummary;
 }
@@ -271,14 +271,14 @@ export interface ContestEffectFlavorText {
 export interface ContestEffectDetail {
   readonly id: number;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     */
   appeal: number;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     */
   jam: number;
   readonly effect_entries: readonly ContestEffectEffectText[];
   readonly flavor_text_entries: readonly ContestEffectFlavorText[];
@@ -400,10 +400,10 @@ export interface EncounterMethodDetail {
   /** @maxLength 200 */
   name: string;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   order?: number | null;
   readonly names: readonly EncounterMethodName[];
 }
@@ -416,10 +416,10 @@ export interface EncounterMethodSummary {
 
 export interface EncounterPokemonDetail {
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   min_perfect_ivs?: number | null;
   always_shiny?: boolean;
   never_shiny?: boolean;
@@ -472,9 +472,9 @@ export interface EvolutionConditionExpression {
   /** Evaluatable RPN condition expression using evolution variables (e.g. 'EC 100 % 0 ==') */
   expression: string;
   /**
-   * Percentage chance of evolution under this condition (0-100)
-   * @nullable
-   */
+     * Percentage chance of evolution under this condition (0-100)
+     * @nullable
+     */
   percentage_chance: number | null;
   /** Evolution variables referenced in the expression */
   variables: EvolutionVariableSummary[];
@@ -492,28 +492,28 @@ export interface PokemonEvolution {
   known_move_type: TypeSummary;
   location: LocationSummary;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   min_level?: number | null;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   min_happiness?: number | null;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   min_beauty?: number | null;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   min_affection?: number | null;
   near_special_rock?: boolean;
   needs_multiplayer?: boolean;
@@ -521,10 +521,10 @@ export interface PokemonEvolution {
   party_species: PokemonSpeciesSummary;
   party_type: TypeSummary;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   relative_physical_stats?: number | null;
   /** @maxLength 10 */
   time_of_day?: string;
@@ -535,22 +535,22 @@ export interface PokemonEvolution {
   evolved_pokemon_form: PokemonFormSummary;
   used_move: MoveSummary;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   min_move_count?: number | null;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   min_steps?: number | null;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   min_damage_taken?: number | null;
   readonly allowed_natures: readonly NatureSummary[];
   readonly condition_expression: EvolutionConditionExpression | null;
@@ -607,6 +607,11 @@ export interface EvolutionVariableDetail {
   symbol: string;
   /** @maxLength 20 */
   data_type?: string;
+  /**
+     * Where the value comes from: 'pokemon' for data stored on the Pokemon (e.g. EC, PID), 'player-input' for an action taken by the player while evolving (e.g. SPIN_DIR, SPIN_SEC)
+     * @maxLength 20
+     */
+  source?: string;
   version_group: VersionGroupSummary;
   readonly names: readonly EvolutionVariableName[];
   readonly descriptions: readonly EvolutionVariableDescription[];
@@ -614,14 +619,14 @@ export interface EvolutionVariableDetail {
 
 export interface Experience {
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     */
   level: number;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     */
   experience: number;
 }
 
@@ -762,25 +767,25 @@ export interface ItemFlavorText {
 
 export interface ItemGameIndex {
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     */
   game_index: number;
   generation: GenerationSummary;
 }
 
 export interface ItemPrice {
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   purchase_price?: number | null;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   sell_price?: number | null;
   currency: CurrencySummary;
   version_group: VersionGroupSummary;
@@ -827,10 +832,10 @@ export interface ItemDetail {
   /** @maxLength 200 */
   name: string;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   fling_power?: number | null;
   fling_effect: ItemFlingEffectSummary;
   readonly attributes: readonly ItemAttributeSummary[];
@@ -933,9 +938,9 @@ export interface LocationAreaDetail {
   /** @maxLength 200 */
   name: string;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     */
   game_index: number;
   readonly encounter_method_rates: readonly LocationAreaEncounterRate[];
   location: LocationSummary;
@@ -957,9 +962,9 @@ export interface LocationName {
 
 export interface LocationGameIndex {
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     */
   game_index: number;
   generation: GenerationSummary;
 }
@@ -968,7 +973,7 @@ export interface LocationDetail {
   readonly id: number;
   /** @maxLength 200 */
   name: string;
-  region: RegionSummary;
+  region: RegionSummary | null;
   readonly names: readonly LocationName[];
   readonly game_indices: readonly LocationGameIndex[];
   readonly areas: readonly LocationAreaSummary[];
@@ -1010,22 +1015,22 @@ export interface MoveEffectEffectText {
 
 export interface MoveChange {
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   accuracy?: number | null;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   power?: number | null;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   pp?: number | null;
   effect_chance: number;
   readonly effect_entries: readonly MoveEffectEffectText[];
@@ -1099,64 +1104,64 @@ export interface MoveMeta {
   ailment: MoveMetaAilmentSummary;
   category: MoveMetaCategorySummary;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   min_hits?: number | null;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   max_hits?: number | null;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   min_turns?: number | null;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   max_turns?: number | null;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   drain?: number | null;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   healing?: number | null;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   crit_rate?: number | null;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   ailment_chance?: number | null;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   flinch_chance?: number | null;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   stat_chance?: number | null;
 }
 
@@ -1168,9 +1173,9 @@ export interface MoveName {
 
 export interface MoveMetaStatChange {
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     */
   change: number;
   stat: StatSummary;
 }
@@ -1196,29 +1201,29 @@ export interface MoveDetail {
   /** @maxLength 200 */
   name: string;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   accuracy?: number | null;
   effect_chance: number;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   pp?: number | null;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   priority?: number | null;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   power?: number | null;
   readonly contest_combos: MoveCombos | null;
   contest_type: ContestTypeSummary;
@@ -1296,9 +1301,9 @@ export interface MoveMetaCategoryDetail {
 
 export interface MoveStatChange {
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     */
   change: number;
   move: MoveSummary;
 }
@@ -1326,14 +1331,14 @@ export interface MoveTargetDetail {
 
 export interface NatureBattleStylePreference {
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     */
   low_hp_preference: number;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     */
   high_hp_preference: number;
   move_battle_style: MoveBattleStyleSummary;
 }
@@ -1346,9 +1351,9 @@ export interface PokeathlonStatSummary {
 
 export interface NaturePokeathlonStat {
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     */
   max_change: number;
   pokeathlon_stat: PokeathlonStatSummary;
 }
@@ -1761,15 +1766,15 @@ export interface PalParkAreaName {
 
 export interface PalParkEncounter {
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   base_score?: number | null;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     */
   rate: number;
   pokemon_species: PokemonSpeciesSummary;
 }
@@ -1793,9 +1798,9 @@ export interface PokeapiMetaResponse {
 
 export interface PokeathlonStatAffectingNature {
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     */
   max_change: number;
   nature: NatureSummary;
 }
@@ -1851,9 +1856,9 @@ export interface PokedexDetail {
 export interface PokemonAbility {
   is_hidden?: boolean;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     */
   slot: number;
   ability: AbilitySummary;
 }
@@ -1861,9 +1866,9 @@ export interface PokemonAbility {
 export interface PokemonAbilityPast {
   is_hidden?: boolean;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     */
   slot: number;
   ability: AbilitySummary;
 }
@@ -1896,9 +1901,9 @@ export interface PokemonPastAbility {
 
 export interface PokemonGameIndex {
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     */
   game_index: number;
   version: VersionSummary;
 }
@@ -1915,31 +1920,33 @@ export interface PokemonMove {
   version_group_details: PokemonMoveVersionGroup[];
 }
 
+export type PokemonSpritesOtherOfficialArtwork = {
+  /** @nullable */
+  front_default: string | null;
+  /** @nullable */
+  front_shiny: string | null;
+};
+
+export type PokemonSpritesOther = {
+  'official-artwork': PokemonSpritesOtherOfficialArtwork;
+};
+
 export interface PokemonSprites {
   /** @nullable */
   front_default: string | null;
-  other: PokemonSprtitesOther;
-}
-
-export interface PokemonSprtitesOther {
-  'official-artwork': PokemonSprtitesOfficialArtwork;
-}
-
-export interface PokemonSprtitesOfficialArtwork {
-  front_default: string | null;
-  front_shiny: string | null;
+  other: PokemonSpritesOther;
 }
 
 export interface PokemonStat {
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     */
   base_stat: number;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     */
   effort: number;
   stat: StatSummary;
 }
@@ -1951,18 +1958,18 @@ export interface PokemonPastStat {
 
 export interface PokemonType {
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     */
   slot: number;
   type: TypeSummary;
 }
 
 export interface TypePokemon {
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     */
   slot: number;
   pokemon: PokemonSummary;
 }
@@ -1977,29 +1984,29 @@ export interface PokemonDetail {
   /** @maxLength 200 */
   name: string;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   base_experience?: number | null;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   height?: number | null;
   is_default?: boolean;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   order?: number | null;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   weight?: number | null;
   readonly abilities: readonly PokemonAbility[];
   readonly past_abilities: readonly PokemonPastAbility[];
@@ -2053,9 +2060,9 @@ export interface PokemonFormName {
 
 export interface PokemonFormType {
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     */
   slot: number;
   type: TypeSummary;
 }
@@ -2076,16 +2083,16 @@ export interface PokemonFormDetail {
   /** @maxLength 200 */
   name: string;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   order?: number | null;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   form_order?: number | null;
   is_default?: boolean;
   is_battle_only?: boolean;
@@ -2151,15 +2158,15 @@ export interface PokemonSpeciesName {
 
 export interface PokemonSpeciesPalParkEncounter {
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   base_score?: number | null;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     */
   rate: number;
   area: PalParkAreaSummary;
 }
@@ -2186,37 +2193,37 @@ export interface PokemonSpeciesDetail {
   /** @maxLength 200 */
   name: string;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   order?: number | null;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   gender_rate?: number | null;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   capture_rate?: number | null;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   base_happiness?: number | null;
   is_baby?: boolean;
   is_legendary?: boolean;
   is_mythical?: boolean;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   hatch_counter?: number | null;
   has_gender_differences?: boolean;
   forms_switchable?: boolean;
@@ -2275,9 +2282,9 @@ export interface StatDetail {
   /** @maxLength 200 */
   name: string;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     */
   game_index: number;
   is_battle_only?: boolean;
   readonly affecting_moves: StatAffectingMoves;
@@ -2297,9 +2304,9 @@ export interface SuperContestEffectFlavorText {
 export interface SuperContestEffectDetail {
   readonly id: number;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     */
   appeal: number;
   readonly flavor_text_entries: readonly SuperContestEffectFlavorText[];
   readonly moves: readonly MoveSummary[];
@@ -2321,9 +2328,9 @@ export interface TypePastRelationships {
 
 export interface TypeGameIndex {
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     */
   game_index: number;
   generation: GenerationSummary;
 }
@@ -2380,10 +2387,10 @@ export interface VersionGroupDetail {
   /** @maxLength 200 */
   name: string;
   /**
-   * @minimum -2147483648
-   * @maximum 2147483647
-   * @nullable
-   */
+     * @minimum -2147483648
+     * @maximum 2147483647
+     * @nullable
+     */
   order?: number | null;
   generation: GenerationSummary;
   readonly move_learn_methods: readonly MoveLearnMethodSummary[];
@@ -2393,796 +2400,797 @@ export interface VersionGroupDetail {
 }
 
 export type AbilityListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type BerryListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type BerryFirmnessListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type BerryFlavorListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type CharacteristicListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type ContestTypeListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type ContestEffectListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type EggGroupListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type EncounterMethodListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type EncounterConditionListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type EncounterConditionValueListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type EvolutionChainListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type EvolutionTriggerListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type EvolutionVariableListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type GenerationListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type GenderListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type GrowthRateListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type ItemListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type ItemCategoryListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type ItemAttributeListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type ItemFlingEffectListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type ItemPocketListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type CurrencyListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type LanguageListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type LocationListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type LocationAreaListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
 };
 
 export type MachineListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type MoveListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type MoveAilmentListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type MoveBattleStyleListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type MoveCategoryListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type MoveDamageClassListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type MoveLearnMethodListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type MoveTargetListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type NatureListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type PalParkAreaListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type PokedexListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type PokemonListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type PokemonColorListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type PokemonFormListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type PokemonHabitatListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type PokemonShapeListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type PokemonSpeciesListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type PokeathlonStatListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type RegionListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type StatListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type SuperContestEffectListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type TypeListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type VersionListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
 
 export type VersionGroupListParams = {
-  /**
-   * Number of results to return per page.
-   */
-  limit?: number;
-  /**
-   * The initial index from which to return the results.
-   */
-  offset?: number;
-  /**
-   * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
-   * Case-insensitive query applied on the `name` property.
-   */
-  q?: string;
+/**
+ * Number of results to return per page.
+ */
+limit?: number;
+/**
+ * The initial index from which to return the results.
+ */
+offset?: number;
+/**
+ * > Only available locally and not at [pokeapi.co](https://pokeapi.co/docs/v2)
+ * Case-insensitive query applied on the `name` property.
+ */
+q?: string;
 };
+
