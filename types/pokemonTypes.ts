@@ -1,11 +1,5 @@
 import { TEvolutionChain } from './evolution';
 
-export type TPokemonList = {
-  id: number;
-  sprite: string;
-  name: string;
-};
-
 export type TPokemonPageData = {
   id: number;
   name: string;
@@ -25,14 +19,13 @@ export type TPokemonPageData = {
   description: string | undefined;
 
   generation: string;
-  habitat: string | null;
 
   evolutionChain: TEvolutionChain;
 };
 
 export type TShortPokemonInfo = {
   name: string;
-  id: string;
+  id: number;
   image: string;
 };
 
@@ -40,7 +33,7 @@ export type TPokemonStats = {
   hp: number;
   attack: number;
   defense: number;
-  specialAttack: number;
-  specialDefense: number;
+  'special-attack': number;
+  'special-defense': number;
   speed: number;
 };

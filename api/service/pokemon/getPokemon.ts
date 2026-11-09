@@ -1,6 +1,7 @@
 import { pokemonRetrieve } from '@/src/generated';
-import { TPokemonPageData, TPokemonStats } from '@/types/pokemonTypes';
+import { TPokemonPageData } from '@/types/pokemonTypes';
 import { getPokemonSpecies } from '../species/getPokemonSpecies';
+import { statsMapper } from '@/api/utils/statsMapper';
 
 export async function getPokemonPageData(
   id: number,
@@ -18,13 +19,9 @@ export async function getPokemonPageData(
     height: pokemonData.height,
     weight: pokemonData.weight,
     types: pokemonData.types.map((type) => type.type.name),
-    // Избавиться от as TPokemonStats
-    stats: Object.fromEntries(
-      pokemonData.stats.map((stat) => [stat.stat.name, stat.base_stat]),
-    ) as TPokemonStats,
+    stats: statsMapper(pokemonData.stats),
     description: pokemonSpecies.description,
     generation: pokemonSpecies.generation,
-    habitat: pokemonSpecies.habitat,
     evolutionChain: pokemonSpecies.evolution,
   };
   return response;
