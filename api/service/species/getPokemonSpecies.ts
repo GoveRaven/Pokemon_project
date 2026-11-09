@@ -11,7 +11,6 @@ export async function getPokemonSpecies(id: number) {
       (el) => el.language.name === 'en',
     )?.flavor_text,
     generation: pokemonSpecies.generation.name.split('-')[1],
-    habitat: pokemonSpecies.habitat.name,
     evolution,
   };
   return response;
