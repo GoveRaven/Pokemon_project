@@ -16,8 +16,8 @@ export async function getPokemonPageData(
       officialArtwork:
         pokemonData.sprites.other['official-artwork'].front_default,
     },
-    height: pokemonData.height,
-    weight: pokemonData.weight,
+    height: pokemonData.height ?? null,
+    weight: pokemonData.weight ?? null,
     types: pokemonData.types.map((type) => type.type.name),
     stats: statsMapper(pokemonData.stats),
     description: pokemonSpecies.description,

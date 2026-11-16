@@ -2,7 +2,9 @@ import { evolutionChainRetrieve } from '@/src/generated';
 import { EvolutionChainLink } from '@/src/generated/pokéAPI.schemas';
 import { TEvolutionChain } from '@/types/evolution';
 
-export async function getEvolutionChain(evolutionChainID: string) {
+export async function getEvolutionChain(
+  evolutionChainID: string,
+): Promise<TEvolutionChain> {
   const data = await evolutionChainRetrieve(evolutionChainID);
   return calcEvolutionChain(data.data.chain);
 }

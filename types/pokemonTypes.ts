@@ -9,14 +9,14 @@ export type TPokemonPageData = {
     officialArtwork: string | null;
   };
 
-  height: number | null | undefined;
-  weight: number | null | undefined;
+  height: number | null;
+  weight: number | null;
 
   types: string[];
 
   stats: TPokemonStats;
 
-  description: string | undefined;
+  description: string | null;
 
   generation: string;
 
