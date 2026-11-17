@@ -2,10 +2,10 @@ import { defineConfig } from 'orval';
 
 export default defineConfig({
   pokeapi: {
-    input:
-      'https://raw.githubusercontent.com/PokeAPI/pokeapi/refs/heads/master/openapi.yml',
+    input: './src/shemas/openapi.yml',
     output: {
-      target: './src/generated/pokeapi.ts',
+      target: './src/generated',
+      mode: 'tags-split',
       client: 'fetch',
       baseUrl: 'https://pokeapi.co',
     },
