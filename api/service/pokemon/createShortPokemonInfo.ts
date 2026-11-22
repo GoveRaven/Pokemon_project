@@ -1,6 +1,6 @@
 import { TShortPokemonInfo } from '@/types/pokemonTypes';
 
-export function getSinglePokemon(
+export function createShortPokemonInfo(
   pokemonName: string,
   pokemonID: string,
 ): TShortPokemonInfo {
