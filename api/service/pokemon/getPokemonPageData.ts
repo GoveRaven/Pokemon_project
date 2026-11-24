@@ -1,7 +1,7 @@
 import { pokemonRetrieve } from '@/src/generated';
 import { TPokemonPageData } from '@/types/pokemonTypes';
 import { getPokemonSpecies } from '../species/getPokemonSpecies';
-import { statsMapper } from '@/api/utils/statsMapper';
+import { statsMapper } from '@/api/service/mappers/statsMapper';
 
 export async function getPokemonPageData(
   id: number,

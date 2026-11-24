@@ -11,8 +11,8 @@ type TPokemonSpecies = {
 
 export async function getPokemonSpecies(id: number): Promise<TPokemonSpecies> {
   const pokemonSpecies = (await pokemonSpeciesRetrieve(String(id))).data;
-  const evolutionChainID = getIdFromUrl(pokemonSpecies.evolution_chain.url);
-  const evolution = await getEvolutionChain(evolutionChainID);
+  const evolutionChainId = getIdFromUrl(pokemonSpecies.evolution_chain.url);
+  const evolution = await getEvolutionChain(evolutionChainId);
   const response = {
     description:
       pokemonSpecies.flavor_text_entries.find((el) => el.language.name === 'en')

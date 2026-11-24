@@ -3,9 +3,9 @@ import { EvolutionChainLink } from '@/src/generated/pokéAPI.schemas';
 import { TEvolutionChain } from '@/types/evolution';
 
 export async function getEvolutionChain(
-  evolutionChainID: string,
+  evolutionChainId: string,
 ): Promise<TEvolutionChain> {
-  const data = await evolutionChainRetrieve(evolutionChainID);
+  const data = await evolutionChainRetrieve(evolutionChainId);
   return calcEvolutionChain(data.data.chain);
 }
 

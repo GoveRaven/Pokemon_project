@@ -1,21 +1,11 @@
 import { pokemonList } from '@/src/generated';
-import { createShortPokemonInfo } from './createShortPokemonInfo';
 import { TShortPokemonInfo } from '@/types/pokemonTypes';
-import { getIdFromUrl } from '@/api/utils/getIdFromUrl';
+import { mapPokemonList } from '../mappers/mapPokemonList';
 
 export async function getPokemonList(
   limit: number = 20,
   offset: number = 0,
 ): Promise<TShortPokemonInfo[]> {
   const listData = (await pokemonList({ limit, offset })).data;
-  const listOfPokemon = listData.results.map((pokemon) => {
-    const pokemonID = getIdFromUrl(pokemon.url);
-
-    if (!pokemonID) {
-      throw new Error(`Не удалось получить ID Pokémon из URL: ${pokemon.url}`);
-    }
-
-    return createShortPokemonInfo(pokemon.name, pokemonID);
-  });
-  return listOfPokemon;
+  return mapPokemonList(listData.results);
 }
